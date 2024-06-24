@@ -60,7 +60,7 @@ export default {
       }
       this.examplePostFirebaseData(user)
         .then(resp => {
-          // console.log('resp: ', resp)
+          console.log('resp desde firebase: ', resp)
         })
         .catch(error => {
           console.log('catch error: ', error)
@@ -75,7 +75,7 @@ export default {
   beforeMount () {
     this.exampleGetFirebaseData()
       .then(resp => {
-        // console.log('resp: ', resp)
+        console.log('Viene desde firebase en el beforeMount: ', resp)
       })
       .catch(error => {
         this.handleError(error)

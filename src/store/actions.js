@@ -19,6 +19,7 @@ export const exampleGetFirebaseData = async ({ commit }, payload) => {
   const urlEnd = '/data.json'
   const type = 'get'
   const resp = await api.exampleFirebaseAsyncRequest(urlEnd, type, payload)
+  console.log('Estamos en exampleGet: ', resp)
   return resp
 }
 
