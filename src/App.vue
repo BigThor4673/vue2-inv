@@ -17,21 +17,21 @@
         <router-view></router-view>
       </keep-alive>
     </transition>
-    <img src="./assets/logo.png">
-    <hello></hello>
+    <!-- <img src="./assets/logo.png"> -->
+    <!-- <hello></hello> -->
   </div>
 </template>
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
 
-import Hello from 'components/Hello'
+// import Hello from 'components/Hello'
 
 export default {
   name: 'app',
 
   components: {
-    Hello
+    // Hello
   },
 
   data () {
@@ -49,22 +49,22 @@ export default {
   methods: {
     ...mapActions([
       'increment',
-      'decrement',
-      'exampleGetFirebaseData',
-      'examplePostFirebaseData'
+      'decrement'
+      // 'exampleGetFirebaseData',
+      // 'examplePostFirebaseData'
     ]),
 
     handleAddUserButton () {
-      const user = {
-        name: this.newUserName
-      }
-      this.examplePostFirebaseData(user)
-        .then(resp => {
-          console.log('resp desde firebase: ', resp)
-        })
-        .catch(error => {
-          console.log('catch error: ', error)
-        })
+      // const user = {
+      //   name: this.newUserName
+      // }
+      // this.examplePostFirebaseData(user)
+      //   .then(resp => {
+      //     console.log('resp desde firebase: ', resp)
+      //   })
+      //   .catch(error => {
+      //     console.log('catch error: ', error)
+      //   })
     },
 
     handleError () {
@@ -73,14 +73,14 @@ export default {
   },
 
   beforeMount () {
-    this.exampleGetFirebaseData()
-      .then(resp => {
-        console.log('Viene desde firebase en el beforeMount: ', resp)
-      })
-      .catch(error => {
-        this.handleError(error)
-        // console.log('catch error: ', error)
-      })
+    // this.exampleGetFirebaseData()
+    //   .then(resp => {
+    //     console.log('Viene desde firebase en el beforeMount: ', resp)
+    //   })
+    //   .catch(error => {
+    //     this.handleError(error)
+    //     // console.log('catch error: ', error)
+    //   })
   }
 }
 </script>

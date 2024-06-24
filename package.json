@@ -17,6 +17,7 @@
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
+    "firebase": "^10.12.2",
     "pug": "^2.0.0-beta6",
     "pug-loader": "^2.3.0",
     "stylus": "^0.54.5",

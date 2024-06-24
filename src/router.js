@@ -5,6 +5,9 @@ import Page2 from './pages/Page2'
 
 const routes = [
   {
+    path: '/',
+    component: Page1
+  }, {
     path: '/page1',
     component: Page1
   }, {

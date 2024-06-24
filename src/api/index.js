@@ -1,4 +1,4 @@
-import Vue from 'vue'
+// import Vue from 'vue'
 
 const api = {
   serverURL: 'http://exampleServerUrl', // your api server url
@@ -15,30 +15,30 @@ const api = {
 //   messagingSenderId: '440784053851'
 // }
 
-const firebaseConfig = {
-  url: 'https://fir-inv-72799-default-rtdb.firebaseio.com',
-  databaseURL: 'https://fir-inv-72799-default-rtdb.firebaseio.com',
-  apiKey: 'AIzaSyD0XCA5pL5swZE38N_XHT_JJT1Uc_OeIyg',
-  authDomain: 'fir-inv-72799.firebaseapp.com',
-  projectId: 'fir-inv-72799',
-  storageBucket: 'fir-inv-72799.appspot.com',
-  messagingSenderId: '213323648848',
-  appId: '1:213323648848:web:5318a93dc667f0c10ba655',
-  measurementId: 'G-RNLG6VNR7V'
-}
+// const firebaseConfig = {
+//   url: 'https://fir-inv-72799-default-rtdb.firebaseio.com',
+//   databaseURL: 'https://fir-inv-72799-default-rtdb.firebaseio.com',
+//   apiKey: 'AIzaSyD0XCA5pL5swZE38N_XHT_JJT1Uc_OeIyg',
+//   authDomain: 'fir-inv-72799.firebaseapp.com',
+//   projectId: 'fir-inv-72799',
+//   storageBucket: 'fir-inv-72799.appspot.com',
+//   messagingSenderId: '213323648848',
+//   appId: '1:213323648848:web:5318a93dc667f0c10ba655',
+//   measurementId: 'G-RNLG6VNR7V'
+// }
 
-/* eslint-disable */
-firebase.initializeApp(firebaseConfig)
-/* eslint-enable */
+// /* eslint-disable */
+// firebase.initializeApp(firebaseConfig)
+// /* eslint-enable */
 
-api.asyncRequest = async (urlEnd, type, payload = {}) => {
-  return await Vue.http[type](api.url + urlEnd, payload, api.timeout)
-}
+// api.asyncRequest = async (urlEnd, type, payload = {}) => {
+//   return await Vue.http[type](api.url + urlEnd, payload, api.timeout)
+// }
 
-api.exampleFirebaseAsyncRequest = async (urlEnd, type, payload = {}) => {
-  console.log(firebaseConfig.url + urlEnd)
-  // return await Vue.http.post('https://vue-boilerplate-a1aaa.firebaseio.com/data.json', 'test')
-  return await Vue.http[type](firebaseConfig.url + urlEnd, payload, api.timeout)
-}
+// api.exampleFirebaseAsyncRequest = async (urlEnd, type, payload = {}) => {
+//   console.log(firebaseConfig.url + urlEnd)
+//   // return await Vue.http.post('https://vue-boilerplate-a1aaa.firebaseio.com/data.json', 'test')
+//   return await Vue.http[type](firebaseConfig.url + urlEnd, payload, api.timeout)
+// }
 
 export default api

@@ -1,6 +1,6 @@
 <template>
   <div class="page1">
-    <h1>page1</h1>
+    <h1>Hola, soy la vista principal</h1>
   </div>
 </template>
 
@@ -28,7 +28,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.page1 {
+/* .page1 {
   color: yellow
-}
+} */
 </style>
