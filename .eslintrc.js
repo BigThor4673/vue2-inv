@@ -6,6 +6,11 @@ module.exports = {
   },
   // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
   extends: 'standard',
+  globals: {
+    "process": true,
+    "prompt": true,
+    "confirm": true
+  },
   // required to lint *.vue files
   plugins: [
     'html'

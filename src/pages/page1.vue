@@ -1,6 +1,8 @@
 <template>
   <div class="page1">
     <h1>Hola, soy la vista principal</h1>
+    <h3>Acá debe aparecer el indicador desde firebase: </h3>
+    <h2></h2>
   </div>
 </template>
 
@@ -9,7 +11,6 @@ export default {
   name: 'page1',
   data () {
     return {
-
     }
   },
   beforeRouteEnter (to, from, next) {
